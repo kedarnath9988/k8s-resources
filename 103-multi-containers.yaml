@@ -11,6 +11,6 @@ spec:
       image: nginx
     
     - name: alma 
-      image: alma 
-      
+      image: almalinux:9 
+      command: ["sleep 2000"]
     
