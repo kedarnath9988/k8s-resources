@@ -8,7 +8,7 @@ metadata:
     module: web 
     annotataions: 
     kubernetes.io/created-by: controller-manager
-    jenins-url: http://daws-kedar.jenkins.online/expense/backend/build/54 
+    jenins-url: "http://daws-kedar.jenkins.online/expense/backend/build/54"
 spec:
   containers:
     - name: nginx
