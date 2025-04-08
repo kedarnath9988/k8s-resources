@@ -1,0 +1,11 @@
+kind: Pod 
+apiVersion: v1 
+metadata: 
+  name: label
+  labels:
+    created_by: kedarnath 
+    environment: production 
+spec:
+  containers:
+    - name: nginx 
+      imsge: nginx
