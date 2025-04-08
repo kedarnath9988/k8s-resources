@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1 
+metadata:
+  name: annatations-01 
+  labels:
+    created_by: kedarnath 
+    project: expense 
+    module: web 
+    annotataions: 
+    kubernetes.io/created-by: controller-manager
+    jenins-url: http://daws-kedar.jenkins.online/expense/backend/build/54 
+spec:
+  containers:
+    - name: nginx
+      image: nginx 
