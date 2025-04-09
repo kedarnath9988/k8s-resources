@@ -1,0 +1,22 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: resourceslimiting 
+  labels:
+    name: rs-limiting 
+    module: web 
+  annotations: 
+    imageregistry: "https://hub.docker.com/"
+spec:
+  containers:
+    - name: nginx 
+      image: nginx 
+      resources:
+        request: 
+          memory: "64mi"
+          cpu: "250m"
+        limits:
+          memory: "64mi"
+          cpu: "250m"
+
+
