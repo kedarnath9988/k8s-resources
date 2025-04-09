@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: annotataion
+  labels:
+    module: frontend 
+    project: expense 
+  annotataions: 
+    created_by: "kedarnath@hello"
+    url: "jenkins_URL"
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      
