@@ -8,12 +8,15 @@ metadata:
   annotataions: 
     imageregistry: "https://hub.docker.com/"
     created_by: kedarnath@hello
-  env:
-    course: kuberenetes 
-    trainer: kedarnath 
-    Duration: 30-hrs 
 spec:
   containers:
     - name: nginx 
       image: nginx 
-      
+      env:
+        - name: course
+          value: kubernetes 
+        - name: trainer 
+          value: kedarnath 
+        - name: duration 
+          value: 30-hrs 
+          
