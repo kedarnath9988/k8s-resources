@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: environment-pod 
+  labels:
+    module: web 
+    project: expense
+  annotataions: 
+    imageregistry: "https://hub.docker.com/"
+    created_by: kedarnath@hello
+  env:
+    course: kuberenetes 
+    trainer: kedarnath 
+    Duration: 30-hrs 
+spec:
+  containers:
+    - name: nginx 
+      image: nginx 
+      
