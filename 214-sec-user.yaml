@@ -1,0 +1,7 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  name: usePass
+data: 
+  USERNAME: a2VkYXJuYXRoCg== 
+  PASSWORD: a2VkYXJuYXRoQDEyMzQK
