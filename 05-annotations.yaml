@@ -6,7 +6,7 @@ metadata:
     created_by: kedarnath 
     project: expense 
     module: web 
-    annotataions: 
+  annotataions: 
     kubernetes.io/created-by: controller-manager
     jenins: "kedarnath"
 spec:
