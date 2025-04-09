@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: resourceslimiting 
+  name: res-multi-cont
   labels:
     name: rs-limiting 
     module: web 
@@ -18,5 +18,16 @@ spec:
         limits:
           memory: "64mi"
           cpu: "250m"
+
+    - name: alma-01 
+      image: almalinux:9
+      command: ["sleep","3000"]
+      resources: 
+        request: 
+          memory: "64mi"
+          cpu: "250m"
+        limits:
+          memory: "128mi"
+          cpu: "500m"
 
 
