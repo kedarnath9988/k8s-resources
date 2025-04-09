@@ -1,17 +1,13 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: res-multi-cont
-  labels:
-    name: rs-limiting 
-    module: web 
-  annotations: 
-    imageregistry: "https://hub.docker.com/"
+  name: res_limiting
 spec:
   containers:
     - name: nginx 
       image: nginx 
       resources:
+        # softlimit: we are requesting to k8s to allot this resources 
         request: 
           memory: "64mi"
           cpu: "250m"
