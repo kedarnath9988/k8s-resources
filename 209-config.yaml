@@ -1,0 +1,7 @@
+kind: Configmap
+apiVersion: v1
+metadata: 
+  name: configexp
+data:
+  course: "devops with AWS "
+  trainer: kedarnath 
