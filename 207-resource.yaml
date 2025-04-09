@@ -1,18 +1,16 @@
-kind: Pod
 apiVersion: v1
+kind: Pod
 metadata:
   name: res_limiting
 spec:
   containers:
-    - name: nginx 
-      image: nginx 
-      resources:
-        # softlimit: we are requesting to k8s to allot this resources 
-        request: 
-          memory: "64mi"
-          cpu: "250m"
-        limits:
-          memory: "64mi"
-          cpu: "250m"
-
+  - name: nginx
+    image: nginx
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
+      limits:
+        memory: "64Mi"
+        cpu: "250m"
 
