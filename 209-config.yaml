@@ -1,7 +1,8 @@
 kind: Configmap
 apiVersion: v1
 metadata: 
-  name: config 
+  name: kedarnath  
 data:
   course: "devops with AWS "
-  trainer: kedarnath 
+  trainer: "kedarnath-01" 
+  duration: "30-hrs"
