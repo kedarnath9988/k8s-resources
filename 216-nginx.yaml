@@ -8,8 +8,8 @@ metadata:
     tier: web
     environment: Dev 
     app: expense 
-  spec:
-    containers: 
-      - name: nginx
-        image: nginx 
+spec:
+  containers: 
+   - name: nginx
+     image: nginx 
 
