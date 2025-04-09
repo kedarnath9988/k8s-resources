@@ -1,7 +1,7 @@
 kind: Secret
 apiVersion: v1
 metadata:
-  name: sec 
+  name: sec
 data: 
   username: Cg==
   password: QDEyMwo= 

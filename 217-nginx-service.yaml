@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata: 
+  name: exp-service
+spec: 
+  selector:
+    project: expense 
+    module: frontend 
+    tier: web
+    environment: Dev 
+    app: expense
+  ports:
+    - protocol: TCp  
+      port: 80 
+      targetPort: 80 
