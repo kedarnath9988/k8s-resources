@@ -18,7 +18,6 @@ spec:
         limits:
           memory: "64mi"
           cpu: "250m"
-
     - name: alma-01 
       image: almalinux:9
       command: ["sleep","3000"]
