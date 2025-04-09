@@ -1,7 +1,7 @@
-kind: Configmap
 apiVersion: v1
-metadata: 
-  name: kedarnath  
+kind: ConfigMap
+metadata:
+  name: daws78s  
 data:
   course: "devops with AWS "
   trainer: "kedarnath-01" 
