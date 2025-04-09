@@ -1,0 +1,8 @@
+kind: namespace 
+apiVersion: v1 
+metadata:
+  name: ns-expense 
+  project: expense
+  labels:
+    environment: devlopment 
+    
