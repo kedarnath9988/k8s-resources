@@ -1,0 +1,19 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: usermanagement 
+spec: 
+  containers:
+    - name: nginx
+      image: nginx
+      env:
+        - name: user
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: USERNAME
+        - name: pass
+          valueFrom:
+            secretKeyRef:
+              name: secrets
+              key: PASSWORD
