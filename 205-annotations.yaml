@@ -2,6 +2,10 @@ kind: Pod
 apiVersion: v1
 metadata: 
   name: annotataion
+  labels:
+    project: expense 
+    environment: development 
+    module: frontend 
   annotations: 
     imageregistry: "https://hub.docker.com/"
     created_by: kedarnath@hello
