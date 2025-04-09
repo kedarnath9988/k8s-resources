@@ -1,17 +1,19 @@
 kind: Pod
 apiVersion: v1
 metadata: 
-  name: environment-pod 
+  name: annotataion
   labels:
-    module: web 
-    project: expense
-  annotataions: 
+    project: expense 
+    environment: development 
+    module: frontend 
+  annotations: 
     imageregistry: "https://hub.docker.com/"
     created_by: kedarnath@hello
+    url: jenkins_URL
 spec:
   containers:
-    - name: nginx 
-      image: nginx 
+    - name: nginx
+      image: nginx
       env:
         - name: course
           value: kubernetes 
@@ -19,4 +21,4 @@ spec:
           value: kedarnath 
         - name: duration 
           value: 30-hrs 
-          
+
