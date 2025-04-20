@@ -15,4 +15,4 @@ spec:
     port: 80
     targetPort: 80
     # node the k8s rec that emphermaral range of the node port is 30000 to 32767
-    nodePort: 32969
+    nodePort: 32760
