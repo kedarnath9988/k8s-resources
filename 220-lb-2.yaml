@@ -3,6 +3,7 @@ apiVersion: v1
 metadata: 
   name: lab-2 
 spec:
+  type: LoadBalancer
   selector: 
     project: expense 
     module: frontend 
