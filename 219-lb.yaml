@@ -10,7 +10,7 @@ spec:
     tier: web
     environment: Dev 
     app: expense 
-  port:
+  ports:
     - protocol: TCP
       port: 80
       targetPort: 80
