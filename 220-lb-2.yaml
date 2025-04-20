@@ -2,6 +2,7 @@ kind: Service
 apiVersion: v1
 metadata: 
   name: lab-2 
+spec:
   selector: 
     project: expense 
     module: frontend 
@@ -13,4 +14,3 @@ metadata:
       port: 80
       targetPort: 80
       nodePort: 32761
-      
