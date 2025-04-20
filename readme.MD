@@ -4,3 +4,9 @@
 
  # Service -> to comunicate with one to another pod 
  
+
+ # how can we access a container from the out side the K8s or internet 4
+ Ans: by using the nodeport or loadbalaner 
+    node port will open the perticuler port in the node with the help of the pubic ip of the perticular node and port 
+    by using the loaddbalancer 
+    direcctly we can acess the container by using loadbalancer DNS 

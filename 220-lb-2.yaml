@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata: 
-  name: lab-2 
+  name: lb-2 
 spec:
   type: LoadBalancer
   selector: 
