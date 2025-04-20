@@ -1,4 +1,4 @@
-kind: repliceset 
+kind: ReplicaSet 
 apiVersion: app/v1
 metaData: 
   name: nginx
