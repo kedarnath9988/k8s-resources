@@ -3,6 +3,7 @@ apiVersion: v1
 metadata:
   name: nginx-nodeport 
 spec:
+  type: NodePort
   selector:
     project: expense 
     module: frontend 
