@@ -1,0 +1,29 @@
+kind: repliceset 
+apiVersion: app/v1
+metaData: 
+  name: nginx
+  # replica set labels 
+  labels:
+    tier: frontend
+    module: frontend
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      tier: frontend
+    # define the pod here 
+    template:
+      metaData:
+        labels:
+          tier: front-end
+          project: student 
+          module: frontend
+      spec:
+        containers:
+          - name: nginx
+            image: nginx 
+      
+
+  
