@@ -1,0 +1,15 @@
+kind: service
+apiVersion: v1
+metadata:
+  name: nginx-nodeport 
+spec:
+  selector:
+    project: expense 
+    module: frontend 
+    tier: web
+    environment: Dev 
+    app: expense 
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
